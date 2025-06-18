@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>PokeDex</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="pokeball"></div>
+        <div class="loading-text">Loading Pokédex...</div>
+        <div class="loading-progress" id="loading-progress">0%</div>
+      </div>
+    </div>
+
+    <!-- Info Button -->
+    <button id="info-button">i</button>
+
+    <!-- Controls Info Panel -->
+    <div id="controls-info">
+      <h3>🎮 Controls</h3>
+      <ul>
+        <li><strong>Arrow Keys:</strong> Move character</li>
+        <li><strong>A/D Keys:</strong> Rotate camera</li>
+        <li><strong>Mouse Click:</strong> Click on Pokémon to interact</li>
+      </ul>
+      <p><strong>💡 Tip:</strong> Click on any Pokémon to see their details and hear their sounds!</p>
+    </div>
+
+    <!-- Character Info Modal -->
+    <div id="character-modal">
+      <div class="modal-content">
+        <button class="close-button" id="close-modal">&times;</button>
+        <div class="character-name" id="character-name">Character Name</div>
+        <div class="character-info" id="character-info">
+          <!-- Character info will be populated here -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
